@@ -73,7 +73,7 @@ vector<int> PostorderTraversal(TreeNode * root){
     while(!temp.empty()){
       root=temp.top();
       temp.pop();
-      if(root->right==NULL||root->right=lastNode){
+      if(root->right==NULL||root->right==lastNode){
             result.push_back(root->val);
             lastNode=root;
        }
